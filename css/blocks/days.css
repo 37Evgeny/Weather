@@ -1,0 +1,11 @@
+.days {
+  background: gray;
+  width: 288.02px;
+  height: 90.14px;
+  border-radius: 10px;
+}
+
+.day {
+    text-align: center;
+    color: #ffffff;
+}

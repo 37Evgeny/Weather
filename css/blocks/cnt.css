@@ -1,0 +1,13 @@
+.cnt {
+    width: 466px;
+    height: 932px;
+    background: rgb(25, 25, 25);
+    border: solid 10px gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+  
+  
+  
