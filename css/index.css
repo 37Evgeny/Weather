@@ -1,4 +1,5 @@
-@import url("./setup/base.css");
-@import url("./blocks/body.css");
-@import url("./blocks/cnt.css");
-@import url("./blocks/days.css");
+@import url("./blocks/state.css");
+@import url("./blocks/page.css");
+@import url("../node_modules/normalize.css/");
+@import url("./setup/reset.css");
+@import url("../css/blocks/weather.css");

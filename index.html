@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-  />
-  <link rel="stylesheet" href="./css/index.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Погода</title>
-</head>
-<body class="page">
-    <div class="cnt">
-        <section class="days">
-            <div class="days__cnt">
-                <p class="day">Today is sunny</p>
-            </div>
-        </section>
-    </div>
-    
-
-
-
-
-
-
+  </head>
+  <body class="page">
+    <section class="state__info">
+      <p class="state__name">КИНЕШМА, РОССИЯ</p>
+      <p class="info__days">Среда 25 Марта 17:25</p>
+    </section>
+    <section class="weather">
+      <span class="weather__temp"> 10<span class="degree">°</span> </span>
+      <div class="weather__info">
+        <img src="./img/img__weather.svg" alt="img" class="weather__img" />
+        <ul class="weather__list">
+          <li>пасмурная погода</li>
+          <li>чувствуется как : 7°</li>
+          <li>ветер: 2 m/s</li>
+          <li>влажность воздуха: 83%</li>
+        </ul>
+      </div>
+    </section>
 
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>

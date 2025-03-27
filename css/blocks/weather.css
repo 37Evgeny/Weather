@@ -1,0 +1,37 @@
+.weather__temp {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  color: rgb(255, 255, 255); /* Цвет текста */
+  font-size: 306px; /* Размер шрифта для температуры */
+  font-weight: 700; /* Жирный шрифт */
+  line-height: 1; /* Высота строки для выравнивания */
+  letter-spacing: -5px; /* Уменьшаем расстояние между буквами */
+}
+
+.degree {
+  position: absolute; /* Устанавливаем абсолютное позиционирование */
+  align-items: center;
+  font-size: 0.5em; /* Уменьшаем размер шрифта для градуса */
+  font-weight: 700; /* Делаем градус жирным */
+  color: rgb(255, 255, 255); /* Цвет градуса */
+}
+
+.weather {
+  display: flex;
+  align-items: flex-start;
+}
+
+.weather__info {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50;
+}
+
+.weather__list {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: left;
+}

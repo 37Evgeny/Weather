@@ -1,0 +1,30 @@
+.state__name {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.info__days {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.weather__list {
+  padding-top: 30px;
+  padding-left: 70px;
+  text-transform: uppercase;
+}
+
+.weather__img {
+  width: 70%;
+}

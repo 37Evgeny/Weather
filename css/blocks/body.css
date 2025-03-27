@@ -1,7 +1,0 @@
-.page {
-  background: rgb(25, 25, 25);
-  display: flex; /* Используем Flexbox */
-  justify-content: center; /* Центрируем по горизонтали */
-  align-items: center; /* Центрируем по вертикали */
-  flex-direction: column;
-}

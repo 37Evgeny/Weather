@@ -1,0 +1,13 @@
+.page {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../../img/bg\ 3.png);
+  font-family: Montserrat, sans-serif; /* Шрифт */
+  margin-left: 10%;
+  overflow: hidden;
+  background-size: cover; /* Заполнение фона */
+  background-position: center; /* Центрирование изображения */
+}
