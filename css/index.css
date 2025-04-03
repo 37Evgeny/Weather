@@ -3,3 +3,4 @@
 @import url("../node_modules/normalize.css/");
 @import url("./setup/reset.css");
 @import url("../css/blocks/weather.css");
+@import url("../css/blocks/days.css");

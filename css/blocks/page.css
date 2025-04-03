@@ -1,13 +1,30 @@
 .page {
-  background: black;
+  position: relative; /* Устанавливаем относительное позиционирование для родительского элемента */
+  background: black; /* Фоновый цвет для страницы */
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background-image: url(../../img/bg\ 3.png);
   font-family: Montserrat, sans-serif; /* Шрифт */
-  margin-left: 10%;
   overflow: hidden;
+  background-image: url(../../img/bg\ 3.png); /* Путь к изображению */
   background-size: cover; /* Заполнение фона */
   background-position: center; /* Центрирование изображения */
+  padding-left: 10%;
+}
+
+.page::before {
+  content: ''; /* Создаем пустой псевдоэлемент */
+  position: absolute; /* Абсолютное позиционирование для покрытия всего элемента .page */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет (можно настроить) */
+  z-index: 1; /* Устанавливаем z-index, чтобы затемнение было под текстом */
+}
+
+.page > * {
+  position: relative; /* Устанавливаем относительное позиционирование для дочерних элементов */
+  z-index: 2; /* Устанавливаем z-index, чтобы текст был выше затемнения */
 }
