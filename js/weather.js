@@ -10,6 +10,8 @@ const weatherTranslations = {
 };
 
 function updateWeather(data) {
+
+    // данные для секции weather
     // Извлекаем необходимые данные из ответа API
     const temperature = Math.round(data.current.temp_c); // Температура в Цельсиях
     const feelsLike = Math.round(data.current.feelslike_c); // Чувствуется как
@@ -34,6 +36,8 @@ function updateWeather(data) {
     const weatherImg = document.getElementById('weatherImg');
     weatherImg.src = data.current.condition.icon; // Используем URL изображения из API
 
+
+    // добавляем данные в секцию days т.е отображаем прогноз на 3 дня вперед
     const daysOfWeek = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 
     const weatherSection = document.getElementById('weatherForecast');

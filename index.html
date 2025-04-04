@@ -13,8 +13,16 @@
     <title>Погода</title>
   </head>
   <body class="page">
+    <section class="search">
+      <div class="search__cnt">
+        <input type="text" class="search__value" placeholder="Введите город" id="search__value">
+        <button class="search__btn" id="search__btn">
+          Поиск
+        </button>
+      </div>
+    </section>
     <section class="state__info">
-      <p class="state__name">Иваново, РОССИЯ</p>
+      <p class="state__name">Ярославль, РОССИЯ</p>
       <p class="info__days" id="dateTime"></p>
     </section>
     <section class="weather" id="weather">
@@ -65,7 +73,6 @@
   </section>
     <script src="./js/index.js"></script>
     <script src="./js/date.js"></script>
-    <script src="./js/weatherForecast.js"></script>
     <script src="./js/api.js"></script>
     <script src="./js/weather.js"></script>
   </body>
