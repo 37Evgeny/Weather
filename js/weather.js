@@ -33,7 +33,7 @@ function updateWeather(data) {
         <li>влажность воздуха: ${humidity}%</li>
     `;
 
-  // Обновляем изображение погоды (если у вас есть соответствующее изображение)
+  // Обновляем изображение погоды 
   const weatherImg = document.getElementById("weatherImg");
   weatherImg.src = data.current.condition.icon; // Используем URL изображения из API
 
@@ -46,7 +46,6 @@ function updateWeather(data) {
     "Четверг",
     "Пятница",
     "Суббота",
-    
   ];
 
   const weatherSection = document.getElementById("weatherForecast");
@@ -73,8 +72,8 @@ function updateWeather(data) {
 
     weatherSection.appendChild(dayContainer); // Добавляем элемент в секцию
   }
-    
-    // Обновляем информацию о городе и стране
-    const cityNameElement = document.getElementById('state__name');
-    cityNameElement.textContent = `${data.location.name}, ${data.location.country}`;
+
+  // Обновляем информацию о городе и стране
+  const cityNameElement = document.getElementById("state__name");
+  cityNameElement.textContent = `${data.location.name}, ${data.location.country}`;
 }

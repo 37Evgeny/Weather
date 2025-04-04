@@ -35,11 +35,20 @@ function getWeather(city) {
 const searchValue = document.getElementById("search__value");
 const searchBtn = document.getElementById("search__btn");
 
+// Добавляем обработчик события на кнопку
+searchBtn.addEventListener('click', () => {
+  city = searchValue.value; // Получаем значение из поля ввода
+  getWeather(city); // Вызываем функцию для получения погоды
+  searchValue.value = ''; // Очищаем поле ввода
+});
+
 // Добавляем обработчик события на поле ввода для клавиши Enter
 searchValue.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') { // Проверяем, нажата ли клавиша Enter
+    event.preventDefault(); // Предотвращаем стандартное поведение формы (если она есть)
       city = searchValue.value; // Получаем значение из поля ввода
       getWeather(city); // Вызываем функцию для получения погоды
+      searchValue.value = ''; // Очищаем поле ввода
   }
 });
 
