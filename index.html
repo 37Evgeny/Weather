@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,21 +8,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Погода</title>
   </head>
   <body class="page">
     <section class="search">
       <div class="search__cnt">
-        <input type="text" class="search__value" placeholder="Введите город" id="search__value">
-        <button class="search__btn" id="search__btn">
-          Поиск
-        </button>
+        <input
+          type="text"
+          class="search__value"
+          placeholder="Введите город"
+          id="search__value"
+        />
+        <button class="search__btn" id="search__btn">Поиск</button>
       </div>
     </section>
     <section class="state__info">
-      <p class="state__name">Ярославль, РОССИЯ</p>
+      <p class="state__name" id="state__name">Ярославль, РОССИЯ</p>
       <p class="info__days" id="dateTime"></p>
     </section>
     <section class="weather" id="weather">
@@ -69,8 +75,7 @@
         </span>
       </div>
     </section> -->
-    <section class="days" id="weatherForecast">
-  </section>
+    <section class="days" id="weatherForecast"></section>
     <script src="./js/index.js"></script>
     <script src="./js/date.js"></script>
     <script src="./js/api.js"></script>
