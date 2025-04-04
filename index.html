@@ -14,18 +14,18 @@
   </head>
   <body class="page">
     <section class="state__info">
-      <p class="state__name">КИНЕШМА, РОССИЯ</p>
+      <p class="state__name">Иваново, РОССИЯ</p>
       <p class="info__days" id="dateTime"></p>
     </section>
-    <section class="weather">
-      <span class="weather__temp"> 10<span class="degree">°</span> </span>
+    <section class="weather" id="weather">
+      <span class="weather__temp"> <span class="degree">°</span> </span>
       <div class="weather__info">
-        <img src="./img/img__weather.svg" alt="img" class="weather__img" />
-        <ul class="weather__list">
-          <li>пасмурная погода</li>
+        <img src="" alt="img" class="weather__img" id="weatherImg" />
+        <ul class="weather__list" id="weatherList">
+          <!-- <li>пасмурная погода</li>
           <li>чувствуется как : 7°</li>
           <li>ветер: 2 m/s</li>
-          <li>влажность воздуха: 83%</li>
+          <li>влажность воздуха: 83%</li> -->
         </ul>
       </div>
     </section>
@@ -66,5 +66,7 @@
     <script src="./js/index.js"></script>
     <script src="./js/date.js"></script>
     <script src="./js/weatherForecast.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/weather.js"></script>
   </body>
 </html>
