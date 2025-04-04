@@ -1,10 +1,23 @@
-const randomImageUrl = 'https://picsum.photos/1920/1080'; // Замените на нужные вам размеры
+// Ваш Access Key от Unsplash
+const accessKey = 'V-VPCrXRs2dDlQD4Pp77IGtZlID2X9JDe5xKojUdQ5M'; // Замените на ваш ключ
 
-fetch(randomImageUrl)
-    .then(response => {
+async function setRandomBackground() {
+    try {
+        const response = await fetch(`https://api.unsplash.com/photos/random?client_id=${accessKey}`);
+        
         if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
+            throw new Error('Ошибка при получении изображения');
         }
-        document.body.style.backgroundImage = `url(${randomImageUrl})`; // Устанавливаем фоновое изображение
-    })
-    .catch(error => console.error('Error:', error));
+
+        const data = await response.json();
+        
+        // Устанавливаем фоновое изображение
+        document.body.style.backgroundImage = `url(${data.urls.regular})`;
+        
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+// Вызываем функцию при загрузке страницы
+document.addEventListener('DOMContentLoaded', setRandomBackground);

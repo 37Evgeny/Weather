@@ -27,7 +27,7 @@ function updateWeather(data) {
     ".weather__temp"
   ).innerHTML = `${temperature}<span class="degree">°</span>`;
   document.querySelector("#weatherList").innerHTML = `
-       <li>${translatedDescription}</li>
+       <li id = 'description'>${translatedDescription}</li>
         <li>чувствуется как : ${feelsLike}°</li>
         <li>ветер: ${windSpeed} м/с</li>
         <li>влажность воздуха: ${humidity}%</li>
