@@ -39,13 +39,14 @@ function updateWeather(data) {
 
   // добавляем данные в секцию days т.е отображаем прогноз на 3 дня вперед
   const daysOfWeek = [
+    "Воскресенье",
     "Понедельник",
     "Вторник",
     "Среда",
     "Четверг",
     "Пятница",
     "Суббота",
-    "Воскресенье",
+    
   ];
 
   const weatherSection = document.getElementById("weatherForecast");
