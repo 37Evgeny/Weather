@@ -27,7 +27,9 @@ function getWeather(city) {
     })
     .then((data) => {
       updateWeather(data);
+      getCityImage(city);
     })
+    
     .catch((error) => console.error("Error:", error));
 }
 
